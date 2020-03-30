@@ -1,0 +1,129 @@
+% CAISE'19 Conference - Paper on Ontological Analysis of the GRADE Taxonomy
+
+% Using IOS template and predefined packages.
+%\documentclass{IOS-Book-Article}
+
+\documentclass[runningheads]{llncs}
+%\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+\usepackage{mathptmx}
+\def\hb{\hbox to 10.7 cm{}}
+
+% Use unicode as document charset.
+\usepackage[utf8]{inputenc}
+
+% Symbols packages: to include many non-standard symbols.
+\usepackage{amssymb}
+\usepackage{eurosym}
+
+% Amsmath package: includes \eqref to reference equations.
+\usepackage{amsmath}
+
+% Color control.
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Graphicx package: to include EPS figures in the document.
+\usepackage{graphicx}
+
+% Url package: to use the \url{} command to output URLs, which breaks them into two lines if needed.
+\usepackage{url}
+
+% Xspace package: to automatically place spaces when needed after macros.
+\usepackage{xspace}
+
+% Hyperref package: to handle crossreferencing commands to produce hypertext links in the document 
+\usepackage{hyperref}
+
+% Soul package: to use the \hl{} command to highlight text, useful to spot "to-do" items.
+\usepackage{soulutf8}
+
+\usepackage{float}
+
+% Colorinlistoftodos package: to insert colored comments so authors can collaborate on the content.
+\usepackage[colorinlistoftodos, textwidth=20mm, textsize=footnotesize]{todonotes}
+\newcommand{\bruno}[1]{\todo[author=\textbf{Bruno},color=green!30,caption={},inline]{#1}}
+\newcommand{\vitor}[1]{\todo[author=\textbf{Vítor},color=red!30,caption={},inline]{#1}}
+
+% Macro definitions.
+\newcommand{\awreq}{\textit{AwReq}\xspace}
+\newcommand{\awreqs}{\textit{AwReqs}\xspace}
+\newcommand{\evoreq}{\textit{EvoReq}\xspace}
+\newcommand{\evoreqs}{\textit{EvoReqs}\xspace}
+\newcommand{\zanshin}{\textit{Zanshin}\xspace}
+\newcommand{\znn}{\textit{ZNN.com}\xspace}
+
+
+% Begin the document.
+\begin{document}
+
+% Predefined cofiguration for the IOS template.
+\pagestyle{headings}
+\def\thepage{}
+
+% The preamble begins here.
+%\begin{frontmatter}   
+
+% Title and date.
+\title{Ontological Analysis of a Decision Making Taxonomy}
+%\title{Towards a Ontological Analysis of the GRADE Taxonomy}
+%\markboth{}{Somewhere 20XX\hb}
+
+\author{Bruno Carneiro\inst{1} \and
+	Bruno Duarte\inst{1} \and
+	Renata Guizzardi\inst{1} \and
+	Anna Perini\inst{2} \and \\
+	Angelo Susi\inst{2} \and
+	Vítor E. Silva Souza\inst{1}
+}
+\authorrunning{Carneiro et al.}
+
+\institute{Ontology and Conceptual Modeling Research Group (NEMO),\\ Federal University of Espírito Santo, Brazil \and
+Fondazione Bruno Kessler, Italy\\
+\email{guimaraescarneiro@gmail.com, brunoborlini@gmail.com, rguizzardi@inf.ufes.br, perini@fbk.eu, susi@fbk.eu, vitorsouza@inf.ufes.br
+}}
+
+\maketitle
+% Abstract.
+\begin{abstract}
+%Software Systems are getting increasingly complex, for a software to be considered commercial,  more requirements to be implemented and higher quality standards to be achieved.Because of that, the decision-making process is vital for any kind organization, decisions need to be made in strategical, tactical and even in operational levels. In order to provide support and improve the decision making process, the GRADE taxonomy was created. In this position paper, we provide an ontological analysis of The GRADE taxonomy with the Decision Making Ontology. We argue that with the ontological analysis we can help to improve the contribution of the taxonomy, by presenting a deep discussion about the relations that exists between the elements of The GRADE and that are not presented.
+%Motivation
+While software is becoming a pervasive element in our daily activities,  the engineering processes pertaining to its development, maintenance and evolution require flexible and effective decision-making. To support these processes, guiding its decision-making process, practical tools have been defined. The GRADE taxonomy is proposed for supporting decision-making about software systems architectures. It has been validated on decisions taken in several industrial projects, evidencing its effectiveness. 
+%Problem
+Nevertheless important weaknesses were pointed out by this validation, like the lack of clear relationships between elements of the decision-making taxonomy, which makes it difficult for a new user to learn how to use it correctly.
+
+%Contribution
+With the aim to address this limitation, we performed an ontological analysis of GRADE using a well-founded core ontology on decision-making. This allowed us to identify concepts that were implicit, besides supporting us in understanding the relationships between the concepts already composing the taxonomy.
+
+%Paper
+In this paper, we describe the ontological analysis of GRADE. Moreover, we illustrate the results of this analysis by applying the resulting model to guide a decision-making process for selecting the most appropriate software architecture/configuration for a release planning tool. 
+We also discuss the limitations of the proposed ontological analysis, as well as some implications for future work.
+
+
+\keywords{Decision-Making process; The GRADE Taxonomy, Decision-Making Ontology, UFO}
+
+\end{abstract}
+
+% Keywords.
+
+%\end{frontmatter}
+%\markboth{January 2016\hb}{January 2016\hb}
+
+% Main contents of the paper, separated by section in different files.
+\input{sec1-intro.tex}
+\input{sec2-background.tex}
+\input{sec3-ontology.tex}
+\input{sec6-example.tex}
+\input{sec4-relatedwork.tex}
+\input{sec7-discussion.tex}
+\input{sec5-conclusions.tex}
+
+% Acknowledgments.
+%\section{Acknowledgments}
+%Nemo (\url{http://nemo.inf.ufes.br}) is currently supported by Brazilian research agencies Fapes (\# 0969/2015), CNPq (\# 461777/2014-2), and by Ufes' FAP (\# 6166/2015). We would like to thank Nicola Guarino, Pedro Negri and Beatriz Franco Martins for their participation during discussions about the research contained herein.
+
+
+% Bibliography.
+\bibliographystyle{myunsrt}
+\bibliography{Ontological-Analysis-GRADE-Taxonomy}
+
+% The end.
+\end{document}

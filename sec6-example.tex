@@ -1,0 +1,21 @@
+\section{Illustrative Example}
+\label{sec-example}
+%2p.(methodology configuration/architectural decisions, which can be supported by the SUPERSEDE toolsuite) for a specific project
+%Discussion about the added value of using the ontology in the example
+
+Here we use the GRADE taxonomy to configure the architecture of SUPERSEDE~\footnote{SUPERSEDE stays for SUpporting evolution and adaptation of PERsonalized Software by Exploiting
+contextual Data and End-user feedback. It is an H2020 EU funded project,
+http://www.supersede.eu.} to describe the activity of \textit{collaborative Requirements Prioritization} and \textit{next release planning} where user feedback is considered as one of the sources of requirements.
+
+The analysis is based on the recognition of the different ontological elements characterizing the activity in the GRADE taxonomy. These elements should be able to describe the activity of configuring an instance of the SUPERSEDE methodology. 
+
+~\cite{FranchRPAAGNOSS18,BusettaKMPSS17,KifetewMPSSB17_RE17demo,ameller2017replan} 
+\begin{itemize}
+    \item The overall \textsf{\textbf{Goal}} of the decision activity is the Collaborative Requirements Prioritization and next release planning actively exploiting user feedback. The activity is mainly for \textsf{Internal Business} in order to \textsf{Minimize time-to-market} by improving the performances of the decision makers to allow for faster decisions.
+    \item The available \textsf{\textbf{Assets}} of the SUPERSEDE methodology are the feedback gathering, the feedback analyzer (to retrieve sentiment and intentions of the feedback), the collaborative decision making methods and next release components that use Genetic Algorithms and the Analytic Hierarchy Process. These assets will be \textsf{used} and possibly \textsf{adapted} to the particular organizational context. All these assets that are both \textsf{Software} and textual have an \textsf{Open Source} \textsf{Origin}. 
+    \item The \textsf{\textbf{Decision method}} for the SUPERSEDE configuration is \textsf{expert-based} and collaborative and the \textsf{\textbf{criteria}} are mainly related to the minimization of the \textsf{time-to-market} and improvement of the quality of decisions
+    \item The organizational \textsf{\textbf{Roles}} involved are the \textsf{asset supplier}, and the \textsf{system end-user}; they are \textsf{deciders} at the strategic, tactical and operative levels. 
+    \item Finally, the \textsf{\textbf{Environment}} of the decision is the \textsf{organization} itself.
+\end{itemize}
+
+The GRADE framework is able to capture the different elements that characterize the configuration decision for a particular goal. The missing aspects are related for example to the relationships between the different elements in the taxonomy to support an operative view of the decision. An example is given by the relationships between the Decision stakeholder and the Asset one should decide on. In the extended ontology has been identified a new intermediate concept that is Evaluation Act (see Figure~\ref{fig-ontology-decision-stakeholder}). In the case of our domain, this is reified via decision making activities related to the choice of a component that consider the asset, taking into account several criteria propositions. This is the case of the evaluation to be made to introduce the SUPERSEDE activity \textit{Feedback Gathering} that has the objective of automatically acquiring and analyzing feedback or to continue processing the feedback by hand. This Evaluation Act can be executed on the bases of different criteria (such as speed in the decision, accuracy and collaboration among decision makers) and using different tools (such as decision tables or algorithms embedded in the SUPERSEDE explorer service \url{https://www.supersede.eu/downloads/supersede-method-explorer/})
